@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 body {
     font-family: 'Source Sans Pro';
-    background: #29335c;
+    background-image: url(../../tictactoe.jpg);
     background-size: cover;
 }
 
@@ -97,4 +97,21 @@ body {
 
 .signature {
     padding-top: 10px;
+}
+
+table {
+    width: 100%;
+}
+td {
+    width: 33.333%;
+}
+td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+    color: black;
+}
+
+.board {
+    width: 34px;
 }
