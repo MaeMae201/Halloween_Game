@@ -2,64 +2,54 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
 </head>
 <title>Tic Tac Toe</title>
 <div class="container">
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title text-center">Spooky Tic Tac Toe Game</h4>
-                </div>
-                <div class="modal-body">
-                    <h3>Welcome to the Spooky Tic Tac Toe Game!</h3>
-                    <p>It’s time to choose your shape.</p>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" id="x" class="btn" onclick="setFig(this.id)">
-                    </button>
-                    <button type="button" id="o" class="btn" onClick="setFig(this.id)">
-                    </button> -->
+    <body>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                        <h4 class="modal-title text-center">Spooky Tic Tac Toe Game</h4>
 
-                    <table id="board">
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                        <center>
+                            <div class="game">
+                                <table id="board">
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+
+                                <h3>Welcome to the Spooky Tic Tac Toe Game!</h3>
+                                <p>It’s time to choose your shape.</p>
+
+
+                                <button href="#" class="button">X</button>
+                                <button href="#" class="button">O</button>
+                        </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- 
-    <div class="game">
-        <div id="first" onClick="icon(this.id)" class="game-field"></div>
-        <div id="second" onClick="icon(this.id)" class="game-field"></div>
-        <div id="third" onClick="icon(this.id)" class="game-field"></div>
-        <div id="fourth" onClick="icon(this.id)" class="game-field"></div>
-        <div id="fifth" onClick="icon(this.id)" class="game-field"></div>
-        <div id="sixth" onClick="icon(this.id)" class="game-field"></div>
-        <div id="seventh" onClick="icon(this.id)" class="game-field"></div>
-        <div id="eight" onClick="icon(this.id)" class="game-field"></div>
-        <div id="nineth" onClick="icon(this.id)" class="game-field"></div>
-    </div> -->
-
 </div>
-</div>
+</body>
 
 </html>

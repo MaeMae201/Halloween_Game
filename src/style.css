@@ -56,6 +56,9 @@ body {
 
 .modal-content {
     background-color: #eaeaea;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.3em;
 }
 
 .modal-header {
@@ -71,7 +74,10 @@ body {
     color: black;
 }
 .modal-header h4 {
-    font-size: 2.3em;
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    color: slategrey;
+    text-align: center;
 }
 
 .modal-body {
@@ -80,32 +86,17 @@ body {
     text-align: center;
 }
 
-.modal-footer {
-    padding: 10px 80px 10px 0px;
-}
-.modal-footer button {
-    background-color: white;
-    color: black;
-    width: 40%;
-    font-size: 2em;
-    transition: 500ms;
-}
-.modal-footer button:hover {
-    background-color: #e4572e;
-    color: black;
-}
-
 .signature {
     padding-top: 10px;
 }
 
-table {
+.table {
     width: 100%;
 }
-td {
+.td {
     width: 33.333%;
 }
-td:after {
+.td:after {
     content: '';
     display: block;
     margin-top: 100%;
@@ -114,4 +105,77 @@ td:after {
 
 .board {
     width: 34px;
+}
+
+.button {
+    background-color: silver;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 6px solid #222;
+}
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    width: 33.333%;
+    border: 6px solid rgba(206, 69, 15, 0.918);
+}
+td::after {
+    content: '';
+    display: block;
+    margin-top: 50%;
+}
+td {
+    border: 6px solid rgba(206, 69, 15, 0.918);
+}
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black;
 }

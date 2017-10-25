@@ -7,8 +7,6 @@ var game = {
     moves: 1
 };
 
-/* FIRST GAME FUNCTIONS */
-
 // Show modal at the begining!
 function start() {
     $('#myModal').modal('show');
@@ -26,7 +24,6 @@ function setFig(id) {
     setCurrPl('user');
 }
 
-/* GAME MECHANICS */
 //First Move by Computer
 function firstMove() {
     $('#fifth').html(game.computer);
@@ -104,8 +101,6 @@ function lockAll() {
 function setCurrPl(curr) {
     game.currentPlayer = curr;
 }
-
-/* GAME OVER */
 
 // Check game status - win/draw or still going?
 function gameStatus() {
@@ -192,3 +187,5 @@ function reset() {
 }
 
 setTimeout(start, 600);
+
+$main();
