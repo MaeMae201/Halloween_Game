@@ -13,8 +13,8 @@ body {
 }
 
 .game-field {
-    width: 134px;
-    height: 134px;
+    width: 150px;
+    height: 150px;
     display: block;
     float: left;
     color: #eaeaea;
@@ -74,8 +74,8 @@ body {
     color: black;
 }
 .modal-header h4 {
-    font-size: 4em;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.4em;
+    font-family: 'Nosifer', cursive;
     color: slategrey;
     text-align: center;
 }
@@ -84,27 +84,6 @@ body {
     padding: 30px;
     margin: 10px 0;
     text-align: center;
-}
-
-.signature {
-    padding-top: 10px;
-}
-
-.table {
-    width: 100%;
-}
-.td {
-    width: 33.333%;
-}
-.td:after {
-    content: '';
-    display: block;
-    margin-top: 100%;
-    color: black;
-}
-
-.board {
-    width: 34px;
 }
 
 .button {
@@ -120,12 +99,6 @@ body {
     cursor: pointer;
 }
 
-table {
-    border-collapse: collapse;
-}
-td {
-    border: 6px solid #222;
-}
 td:first-of-type {
     border-left-color: transparent;
     border-top-color: transparent;
@@ -154,9 +127,7 @@ td::after {
     display: block;
     margin-top: 50%;
 }
-td {
-    border: 6px solid rgba(206, 69, 15, 0.918);
-}
+
 td:first-of-type {
     border-left-color: transparent;
     border-top-color: transparent;

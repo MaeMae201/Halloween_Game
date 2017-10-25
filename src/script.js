@@ -1,4 +1,6 @@
-/* Game object with all variables. */
+const $ = require('jquery');
+const appRoot = $('#app');
+
 var game = {
     first: true,
     user: '',
@@ -7,7 +9,6 @@ var game = {
     moves: 1
 };
 
-// Show modal at the begining!
 function start() {
     $('#myModal').modal('show');
 }
