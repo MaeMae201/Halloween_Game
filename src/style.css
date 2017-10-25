@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 body {
     font-family: 'Source Sans Pro';
-    background-image: url(../../tictactoe.jpg);
     background-size: cover;
 }
 
@@ -27,33 +26,6 @@ body {
     transition: 200ms;
 }
 
-#first,
-#second,
-#third {
-    border-bottom: 3px solid #525b76;
-}
-
-#second {
-    border-left: 3px solid #525b76;
-    border-right: 3px solid #525b76;
-}
-
-#fourth,
-#fifth,
-#sixth {
-    border-bottom: 3px solid #525b76;
-}
-
-#fifth {
-    border-left: 3px solid #525b76;
-    border-right: 3px solid #525b76;
-}
-
-#eight {
-    border-left: 3px solid #525b76;
-    border-right: 3px solid #525b76;
-}
-
 .modal-content {
     background-color: #eaeaea;
     font-family: 'Times New Roman', Times, serif;
@@ -62,7 +34,7 @@ body {
 }
 
 .modal-header {
-    background-image: url(../../Downloads/tictactoe.jpg);
+    background-image: url(tictactoe.jpg);
     width: 100%;
     height: 100%;
     color: darkgrey;
@@ -99,20 +71,6 @@ body {
     cursor: pointer;
 }
 
-td:first-of-type {
-    border-left-color: transparent;
-    border-top-color: transparent;
-}
-td:nth-of-type(2) {
-    border-top-color: transparent;
-}
-td:nth-of-type(3) {
-    border-right-color: transparent;
-    border-top-color: transparent;
-}
-tr:nth-of-type(3) td {
-    border-bottom-color: transparent;
-}
 table {
     height: 100%;
     width: 100%;
@@ -121,11 +79,6 @@ table {
 td {
     width: 33.333%;
     border: 6px solid rgba(206, 69, 15, 0.918);
-}
-td::after {
-    content: '';
-    display: block;
-    margin-top: 50%;
 }
 
 td:first-of-type {
