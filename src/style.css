@@ -1,105 +1,75 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 body {
-    font-family: 'Source Sans Pro';
-    background-size: cover;
-}
-
-.game {
-    background-color: transparent;
-    width: 402px;
-    height: 402px;
-    margin: 50px auto;
-}
-
-.game-field {
-    width: 150px;
-    height: 150px;
-    display: block;
-    float: left;
-    color: #eaeaea;
-    font-size: 6.3em;
-    padding: 1px 27px;
-}
-
-.win {
-    color: #e4572e;
-    transition: 200ms;
-}
-
-.modal-content {
-    background-color: #eaeaea;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 1.3em;
-}
-
-.modal-header {
     background-image: url(tictactoe.jpg);
-    width: 100%;
-    height: 100%;
-    color: darkgrey;
-}
-.modal-header button {
-    color: black;
-}
-.modal-header button:hover {
-    color: black;
-}
-.modal-header h4 {
-    font-size: 3.4em;
     font-family: 'Nosifer', cursive;
     color: slategrey;
+    background-size: cover;
+    font-size: 1em;
+}
+h4 {
+    text-align: center;
+    font-size: 3em;
+}
+.container {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+}
+.item {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    float: left;
+    font-size: 600%;
+    line-height: 150px;
     text-align: center;
 }
-
-.modal-body {
-    padding: 30px;
-    margin: 10px 0;
-    text-align: center;
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(4),
+.item:nth-child(5) {
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
 }
-
-.button {
-    background-color: silver;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+.item:nth-child(3),
+.item:nth-child(6) {
+    border-bottom: 4px solid #000;
+}
+.item:nth-child(7),
+.item:nth-child(8) {
+    border-right: 4px solid #000;
+}
+.play {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    margin-top: 50px;
+}
+.play button {
+    font-size: 200%;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    padding: 5px 30px;
     cursor: pointer;
 }
-
-table {
-    height: 100%;
-    width: 100%;
-    border-collapse: collapse;
+#alert {
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 130px;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    background-color: #fff;
+    text-align: center;
+    font-size: 200%;
+    padding: 20px 0;
+    display: none;
 }
-td {
-    width: 33.333%;
-    border: 6px solid rgba(206, 69, 15, 0.918);
-}
-
-td:first-of-type {
-    border-left-color: transparent;
-    border-top-color: transparent;
-}
-td:nth-of-type(2) {
-    border-top-color: transparent;
-}
-td:nth-of-type(3) {
-    border-right-color: transparent;
-    border-top-color: transparent;
-}
-tr:nth-of-type(3) td {
-    border-bottom-color: transparent;
-}
-
-h3 {
-    color: black;
-}
-
-p {
-    color: black;
+#alert button {
+    font-size: 70%;
+    font-family: 'Handlee', cursive;
+    padding: 0 10px;
+    cursor: pointer;
 }
