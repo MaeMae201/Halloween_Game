@@ -5,6 +5,7 @@ body {
     color: slategrey;
     background-size: cover;
     font-size: 1em;
+    background-repeat: no-repeat;
 }
 h4 {
     text-align: center;
